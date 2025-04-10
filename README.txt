@@ -1,5 +1,6 @@
 ### Stock Checker Bot
-This Python script monitors product stock on two websites and alerts you if the stock changes. It checks every 10 minutes.
+This Python script monitors product stock on two websites and alerts you if the stock changes. It checks every 10 minutes. The stock is checked via particular website elements and colors (in this instance, <p> element tag and color: #ff009b)
+
 ## Requirements
 - Python 3
 - "requests", "beautifulsoup4", "playsound"

@@ -4,29 +4,6 @@ from bs4 import BeautifulSoup
 import re
 from playsound import playsound
 
-# ASCII Art that shows when the program starts
-ascii_art = """
-                                                          
-        .    . @                            @@            
-       .@@@@  @  @@                          @+@          
-      @ @@@@@ @   @@@.                       : @@@        
-    . @  @@@@ @   @@@@* @@.         =@@@@ @@  @@@@@       
-   @    @@@*@@@   @@  @@ @@@@@   @@@  .@@.   @@@@@@       
-    .   @@@@@@@   @  .@  @@@@  @   @@@@@@@   @@@@@+       
-    =   :  @@@@  @@   @  @@@@  @=  @@@@-@@   @@@@         
-   @@@@@   @@@ @@@@   @  @@@@  @   @@   @@   @@@@         
-      @@  @@   .@@@   @  @@@@  @@@@@@   @@   @@@@         
-       @@@@@@   @@@  @@  @@@@  @@@@=    @@   @@@@.        
-  @     .@@@@    @@@@@@@@@@@@@@@    @  @@@   @@@@.        
- @@@@@          .@@@@@@@.  =@@@@@@@. @@@@@:  @@@@#@@.     
-  @@@@      .   @@@@@          @@@@@@    .   :     @@@    
-  @@@@*    @:  .@@@@@            .       @@  @@   .@@@@   
-   @.@@..@    @@@@@@                .@@@@@    @@@@@@@@@   
-     @@@..@@@@@@@@@                   @@@@    @@@ @@@@@   
-        @@@@@@@@@                       .@@@@@@@@@        
-                                          -@@@@@@@.       
-"""
-
 # Function to extract stock from a webpage
 def check_stock(url, max_stock):
     headers = {"User-Agent": "Mozilla/5.0"}
@@ -69,8 +46,6 @@ def check_stock(url, max_stock):
         print(f"Error: {e}")
 
 if __name__ == "__main__":
-    # Display ASCII Art when the script starts
-    print(ascii_art)
     
     # US website URL and max static stock of 4700
     us_url = "https://bodega.lomavistarecordings.com/products/blasphemyheresymystery"
